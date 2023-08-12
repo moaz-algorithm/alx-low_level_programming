@@ -5,16 +5,17 @@ echo '#include <stdio.h>
 /**
 * main - Entry point
 *
-* Description: A C program that prints with put function
+* Description: A C program that prints with put function.
 *
 * Return: Alawys 0 (Success)
 */
-     int main(void)' > ${filename}
+int main(void)' > ${filename}
 #echo 'wrait the code'
 #read code
 echo '{' >> ${filename}
 #echo '	'${code} >> ${filename}
-
+echo '	' >> ${filename}
+echo '	return (0);' >> ${filename}
 echo '}' >> ${filename}
 vi ${filename}
 betty ${filename}
